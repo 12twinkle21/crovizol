@@ -1,0 +1,161 @@
+.topTitle{
+   margin-top: 40px;
+}
+.topTitle p{
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 17px;
+   color: #8f8f8f;
+}
+.topTitle span{
+   margin: 0 10px;
+}
+.topTitle a{
+   color: #000;
+}
+.topTitle h2{
+   margin-top: 25px;
+   font-size: 28px;
+   font-weight: 700;
+}
+.sortMenu{
+   background-color: #f5f5f5;
+   padding: 25px;
+   width: 25%;
+   margin: 40px 0;
+   border-radius: 6px;
+}
+.categoriesTitle, .priceTitle, .brandsTitle, .producerTitle, .seriesTitle, .areaTitle{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 15px;
+   cursor: pointer;
+}
+.categoriesTitle h3, .priceTitle h3, .brandsTitle h3, .producerTitle h3, .seriesTitle h3, .areaTitle h3{
+   font-size: 16px;
+   font-weight: 700;
+}
+.sortCategories p, .sortMenu label{
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 20px;
+   margin-bottom: 10px;
+   cursor: pointer;
+   width: fit-content;
+}
+.sortCategories a{
+   margin-top: 15px;
+   color: #3E64FF;
+}
+.sortCategories span,.sortPrice span, .sortBrands span{
+   font-size: 14px;
+   font-weight: 400;
+   color: #8f8f8f;
+   margin-left: 8px;
+}
+.sortPrice, .sortBrands, .sortProducer{
+   margin-top: 40px;
+}
+.priceTitle h3, .brandsTitle h3{
+   position: relative;
+}
+.priceTitle h3::after, .brandsTitle h3::after{
+   content: '';
+   width: 6px;
+   height: 6px;
+   position: absolute;
+   top: 50%;
+   right: -15px;
+   background-image: url(../../img/menu/menuTitle.png);
+   transform: translateY(-1px);
+}
+.priceInputs{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.priceInputs span{
+   font-size: 25px;
+}
+.priceInputs input{
+   width: 45%;
+   height: 40px;
+   border:none;
+   border: 1px solid #8f8f8f;
+   border-radius: 4px;
+   padding: 0 15px;
+   font-size: 14px;
+   font-weight: 500;
+}
+.priceProgress{
+   width:100%;
+   height: 2px;
+   background-color: #8f8f8f;
+   margin: 35px 0;
+   border-radius: 5px;
+   position: relative;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.progressActive{
+   position: absolute;
+   width: 55%;
+   height: 2px;
+   background-color: #3E64FF;
+   left:20px;
+   top:0;
+}
+.progressActiveLeftBtn, .progressActiveRightBtn{
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   left:0;
+   top:-10px;
+   background-color: #fff;
+   border-radius: 50%;
+   border: 2px solid #3E64FF;
+   cursor: pointer;
+}
+
+.progressActiveRightBtn{
+   left: 55%;
+}
+.sortMenu input[type='checkbox']{
+   width: 20px;
+   height: 20px;
+   border: 1px solid #8f8f8f;
+   border-radius: 4px;
+}
+.check{
+   display: flex;
+}
+.check label{
+   margin-left: 12px;
+}
+.acceptBtn{
+   margin-top: 40px;
+   width: 100%;
+   height: 48px;
+   background-color: #fff;
+   color: #3E64FF;
+   border: 1px solid #3E64FF;
+   border-radius: 6px;
+   font-size: 16px;
+   font-weight: 700;
+   cursor: pointer;
+}
+.dropFilterBtn{
+   margin-top: 25px;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+.dropFilterBtn p, .dropFilterBtn a{
+   font-size: 14px;
+   font-weight: 500;
+   color: #8f8f8f;
+}
+.dropFilterBtn p{
+   font-size: 25px;
+   margin-right: 5px;
+}
