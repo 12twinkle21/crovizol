@@ -1,0 +1,46 @@
+.catalog1__products{
+   display: flex;
+   flex-wrap: wrap;
+   margin: 40px 0;
+}
+.mainCatalogItem{
+   width: 25%;
+}
+
+.selectedFilters{
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 25px;
+}
+.selectedFilter{
+   padding: 10px 15px;
+   border: 1px solid #8f8f8f;
+   border-radius: 6px;
+   display: flex;
+   align-items: center;
+   margin-right: 15px;
+   margin-bottom: 15px;
+}
+.selectedFilter svg{
+   cursor: pointer;
+}
+.selectedFilter span:first-child{
+   font-size: 12px;
+   font-weight: 500;
+   color: #8f8f8f;
+   margin-right: 8px;
+}
+.selectedFilter span:nth-child(2){
+   font-size: 12px;
+   font-weight: 600;
+   color: #000;
+   margin-right: 8px;
+}
+.selectedFilter svg:active{
+   transform: scale(0.9);
+}
+@media(hover: hover) and (pointer: fine){
+   .selectedFilter svg:hover path{
+      fill: #3E64FF;
+   }
+}

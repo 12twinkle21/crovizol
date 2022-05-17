@@ -4,15 +4,43 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./main.css">
+   <link rel="stylesheet" href="./backCall.css">
    <link rel="stylesheet" href="../global.css">
    <link rel="stylesheet" href="../mainCatalogItem.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-   <title>main</title>
+   <title>backCall</title>
 </head>
 <body>
+   <div class='overlay'></div>
+   <div class='overlayMenu'>
+      <div class='overlayCloseBtn'>
+         <img src='../../img/menuCloseBtn.png' width='24' height='24' alt='Close button'/>
+         </div>
+      <div class='overlayMenu__title'>
+         <h2>Обратный звонок</h2>
+      </div>
+      <div class='overlayMenu__inputs'>
+         <input type='text' placeholder='Имя'/>
+         <input type='text' placeholder='Фамилия'/>
+         <input type='tel' placeholder='Телефон'/>
+         <textarea placeholder='Комментарий'></textarea>
+      </div>
+      <div class='overlayMenu__checkboxes'>
+         <div class='overlayMenu__checkbox'>
+            <input id='agreement' type='checkbox'>
+            <label for='agreement'>Даю согласие на <a href='#'>обработку персональных данных</a></label>
+         </div>
+         <div class='overlayMenu__checkbox'>
+            <input id='policy' type='checkbox'>
+            <label for='policy'>С политикой <a href='#'>конфиденциальности</a> ознакомлен</label>
+         </div>
+      </div>
+      <div class='overlayMenu__btn'>
+         <button>Перезвоните мне</button>
+      </div>
+   </div>
    <div class='hAndFWrapper'>
    <header class='header'>
       <div class='headerTop'>
@@ -793,7 +821,7 @@
       <button>
          <div class='bigBtn__items'>
          <p class='bigBtn__btnText'>Все бренды</p>
-         <img class='bigBtnArrowBrands' src='../../img/bigBtnRightArrow.svg' width='20' height='20' alt='arrow'/>
+         <img class='bigBtnArrow' src='../../img/bigBtnRightArrow.svg' width='20' height='20' alt='arrow'/>
       </div>
       </button>
    </div>

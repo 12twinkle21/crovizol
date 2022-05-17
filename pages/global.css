@@ -12,6 +12,29 @@ body img, svg, button, input{
    margin: 0 auto;
    padding: 0 92px;
 }
+body{
+   position: relative;
+}
+.overlay{
+   position: absolute;
+   top:0;
+   left:0;
+   right: 0;
+   bottom: 0;
+   background-color: #000;
+   opacity: 0.5;
+   z-index: 10000;
+}
+.overlayMenu{
+   width: 35%;
+   padding: 60px;
+   background-color: #fff;
+   position: absolute;
+   top:0;
+   height: 100vh;
+   right: 0;
+   z-index: 100000;
+}
 .hAndFWrapper{
    max-width: 1600px;
    margin: 0 auto;
@@ -31,6 +54,7 @@ body img, svg, button, input{
 .headerTop__city{
    margin-right: 60px;
    display: flex;
+   align-items: center;
 }
 .headerTop__city svg, .headerTop__btns button svg{
    margin-right: 8px;
@@ -45,6 +69,7 @@ body img, svg, button, input{
 }
 .headerTop__left{
    display: flex;
+   align-items: center;
 }
 .headerTop__nav ul{
    display: flex;
@@ -126,10 +151,8 @@ body img, svg, button, input{
    border-radius: 6px;
    font-size: 14px;
    font-weight: 500;
+   line-height: 24px;
    outline-color: #3E64FF;
-}
-.headerBottom__search input:focus{
-   background-color: #fff;
 }
 
 .headerBottom__search::after{
@@ -157,13 +180,198 @@ body img, svg, button, input{
    font-size: 14px;
    font-weight: 500;
 }
+.headerBottom__btns{
+   display: flex;
+}
 .headerBottom__btns button{
    width: 48px;
    height: 48px;
    margin-right: 24px;
    border:none;
-   background-color: #fff;
+   background-color: #f5f5f5;
+   border-radius: 50%;
    cursor: pointer;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#headerBtnActive{
+   background-color: #3E64FF;
+   position: relative;
+}
+#headerBtnActive svg path{
+   fill: #fff;
+}
+.topTitle{
+   margin-top: 40px;
+}
+.topTitle p{
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 17px;
+   color: #8f8f8f;
+}
+.topTitle span{
+   margin: 0 10px;
+}
+.topTitle a{
+   color: #000;
+}
+.topTitle h2{
+   margin-top: 25px;
+   font-size: 28px;
+   font-weight: 700;
+}
+.categoriesTitle, .priceTitle, .brandsTitle, .producerTitle, .seriesTitle, .areaTitle{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 15px;
+   cursor: pointer;
+}
+.categoriesTitle h3, .priceTitle h3, .brandsTitle h3, .producerTitle h3, .seriesTitle h3, .areaTitle h3{
+   font-size: 16px;
+   font-weight: 700;
+}
+.sortCategories p, .sortMenu label{
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 20px;
+   margin-bottom: 10px;
+   cursor: pointer;
+   width: fit-content;
+}
+.sortCategories a{
+   margin-top: 15px;
+   color: #3E64FF;
+}
+.sortCategories span,.sortPrice span, .sortBrands span{
+   font-size: 14px;
+   font-weight: 400;
+   color: #8f8f8f;
+   margin-left: 8px;
+}
+.sortPrice, .sortBrands, .sortProducer{
+   margin-top: 40px;
+}
+.priceTitle h3, .brandsTitle h3{
+   position: relative;
+}
+.priceTitle h3::after, .brandsTitle h3::after{
+   content: '';
+   width: 6px;
+   height: 6px;
+   position: absolute;
+   top: 50%;
+   right: -15px;
+   background-image: url(../../img/menuTitle.svg);
+   transform: translateY(-2px);
+}
+.priceInputs{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.priceInputs span{
+   font-size: 25px;
+}
+.priceInputs input{
+   width: 45%;
+   height: 40px;
+   border:none;
+   border: 1px solid #8f8f8f;
+   border-radius: 4px;
+   padding: 0 15px;
+   font-size: 14px;
+   font-weight: 500;
+}
+.priceProgress{
+   width:100%;
+   height: 2px;
+   background-color: #8f8f8f;
+   margin: 35px 0;
+   border-radius: 5px;
+   position: relative;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.progressActive{
+   position: absolute;
+   width: 55%;
+   height: 2px;
+   background-color: #3E64FF;
+   left:20px;
+   top:0;
+}
+.progressActiveLeftBtn, .progressActiveRightBtn{
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   left:0;
+   top:-10px;
+   background-color: #fff;
+   border-radius: 50%;
+   border: 2px solid #3E64FF;
+   cursor: pointer;
+}
+
+.progressActiveRightBtn{
+   left: 55%;
+}
+.sortMenu input[type='checkbox']{
+   width: 20px;
+   height: 20px;
+   border: 1px solid #8f8f8f;
+   border-radius: 4px;
+   cursor: pointer;
+}
+.check{
+   display: flex;
+}
+.check label{
+   margin-left: 12px;
+}
+.menuAcceptBtn{
+   margin-top: 40px;
+   width: 100%;
+   height: 48px;
+   background-color: #fff;
+   color: #3E64FF;
+   border: 1px solid #3E64FF;
+   border-radius: 6px;
+   font-size: 16px;
+   font-weight: 700;
+   cursor: pointer;
+}
+.dropFilterBtn{
+   margin-top: 25px;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+.dropFilterBtn p, .dropFilterBtn a{
+   font-size: 14px;
+   font-weight: 500;
+   color: #8f8f8f;
+}
+.dropFilterBtn p{
+   font-size: 25px;
+   margin-right: 5px;
+}
+.cartBtnCount{
+   position: absolute;
+   top:-5px;
+   right: -5px;
+   background-color: #ED6663;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 12px;
+   font-weight: 600;
+   color: #fff;
 }
 .headerBottom__btns button:last-child{
    margin-right: 0;
@@ -243,9 +451,6 @@ body img, svg, button, input{
    margin-top: 15px;
    color: #8F8F8F;
 }
-.headerBottom__catalog button:active, .headerTop__btns button:active, .headerBottom__btns button:active, .footer__arrow:active .footer__arrowImg{
-   transform: scale(0.9);
-}
 .contentWithMenu{
    display: flex;
    margin: 40px 0;
@@ -273,6 +478,7 @@ body img, svg, button, input{
    padding: 0 15px;
    cursor: pointer;
    border-radius: 6px;
+   user-select: none;
 }
 .filter__left p{
    margin-right: 75px;
@@ -314,13 +520,14 @@ body img, svg, button, input{
 .bigBtn__items{
    display: flex;
    justify-content: center;
+   align-items: center;
 }
 .bigBtn__items p{
    font-size: 16px;
    font-weight: 700;
    margin-right: 10px;
 }
-.bigBtnArrow, .pageNumbers svg{
+.bigBtnArrow, .pageNumbers svg, .bigBtnArrowBrands{
    transition: linear transform 0.1s;
 }
 .bigBtn:active .bigBtn__btnText{
@@ -368,33 +575,193 @@ body img, svg, button, input{
    font-weight: 600;
    margin-right: 10px;
 }
+.products__items{
+   margin-top: 40px;
+   display: flex;
+   position: relative;
+   padding: 10px;
+   justify-content: space-between;
+   overflow: hidden;
+}
+.products{
+   position: relative;
+}
+.productsArrowLeft, .productsArrowRight{
+   box-shadow: 0px 22px 60px rgba(0, 0, 0, 0.11), 0px 8.47407px 19.1111px rgba(0, 0, 0, 0.0668148), 0px 1.79259px 4.88889px rgba(0, 0, 0, 0.0431852);
+   width: 48px;
+   height: 48px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   z-index: 1000;
+   cursor: pointer;
+   background-color: #fff;
+}
+.productsArrowLeft{
+   top:50%;
+   left: -40px;
+}
+.productsArrowRight{
+   top:50%;
+   right: -40px;
+}
+.products__items .mainCatalogItem{
+   min-width: 16.5%;
+   width: 16.5%;
+}
+.menuCloseBtn, .overlayCloseBtn{
+   width: 48px;
+   height: 48px;
+   background-color: #fff;
+   border-radius: 50%;
+   box-shadow: 0px 22px 60px rgba(0, 0, 0, 0.11), 0px 8.47407px 19.1111px rgba(0, 0, 0, 0.0668148), 0px 1.79259px 4.88889px rgba(0, 0, 0, 0.0431852);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+   margin-right: 30px;
+   cursor: pointer;
+}
+.overlayCloseBtn{
+   margin: 0;
+   position: absolute;
+   top: 30px;
+   right: 30px;
+}
+.overlayMenu__title h2{
+   font-size: 28px;
+   font-weight: 700;
+}
+.overlayMenu__inputs{
+   margin-top: 40px;
+}
+.overlayMenu__inputs input, .overlayMenu__inputs textarea{
+   width: 100%;
+   margin-bottom: 25px;
+   height: 40px;
+   background-color: #f5f5f5;
+   border: none;
+   border-radius: 6px;
+   padding: 0 15px;
+   outline-color: #3E64FF;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 24px;
+} 
+.overlayMenu__inputs textarea{
+   height: 120px;
+   padding: 10px 15px;
+   resize: none;
+}
+.overlayMenu__checkbox{
+   display: flex;
+   align-items: center;
+   margin-bottom: 15px;
+}
+.overlayMenu__checkbox input{
+   width: 20px;
+   height: 20px;
+   margin-right: 10px;
+   cursor: pointer;
+}
+.overlayMenu__checkbox label{
+   font-size: 13px;
+   font-weight: 500;
+   cursor: pointer;
+}
+.overlayMenu__btn{
+   margin-top: 40px;
+}
+.overlayMenu__btn button{
+   height: 40px;
+   padding: 0 23px;
+   background-color: #3E64FF;
+   color: #fff;
+   border: none;
+   border-radius: 6px;
+   font-size: 14px;
+   font-weight: 600;
+   cursor: pointer;
+}
+#invalidInput{
+   border: 1px solid#ED6663;
+   background-color: #fff;
+}
+#invalidInput::placeholder{
+   color: #ED6663;
+}
+.topCategotyItems{
+   margin-top: 40px;
+   display: flex;
+   flex-wrap: wrap;
+}
+.topCategotyItem{
+   padding: 10px 15px;
+   background-color: #f5f5f5;
+   border-radius: 200px;
+   margin-right: 15px;
+   margin-bottom: 15px;
+   cursor: pointer;
+   color: #3E64FF;
+}
+.topCategotyItem p{
+   font-size: 16px;
+   font-weight: 500;
+}
+.headerBottom__search input:focus, .overlayMenu__inputs input:focus, .overlayMenu__inputs textarea:focus, .citySearch input:focus{
+   background-color: #fff;
+}
+
+.headerBottom__catalog button:active, .headerTop__btns button:active, .headerBottom__btns button:active, .footer__arrow:active .footer__arrowImg, .productsArrowLeft:active, .productsArrowRight:active, .filter__left:active, .menuAcceptBtn:active, .menuCloseBtn:active, .overlayCloseBtn:active, .overlayMenu__btn button:active, .topCategotyItem:active{
+   transform: scale(0.9);
+}
+
+
 
 @media(hover: hover) and (pointer: fine){
-   .headerTop__city p:hover{
+   .headerTop__city:hover p, .categoriesMore:hover, .footer__info a:nth-child(2):hover, .overlayMenu__checkbox label a:hover, .headerBottom__call a:last-child:hover, .footer__call a:last-child:hover{
       color: #1E90FF;
    }
-   .headerTop__nav a:hover, .headerBottom__call a:first-child:hover, .footer__call a:first-child:hover, .footer__nav a:hover, .pageNumbers a:hover, .pageNumbers__filter:hover{
-      color: #A9A9A9;
+   .headerTop__city:hover svg path{
+      fill: #1E90FF;
+   }
+   .headerTop__nav a:hover, .headerBottom__call a:first-child:hover, .footer__call a:first-child:hover, .footer__nav a:hover, .pageNumbers a:hover, .pageNumbers__filter:hover,.bigBtn:hover .bigBtn__items,.topTitle a:hover, .filter__left:hover p, .sortCategories p:hover, .categoriesTitle:hover h3, .priceTitle:hover h3, .brandsTitle:hover h3, .producerTitle:hover h3, .seriesTitle:hover h3, .areaTitle:hover h3, .sortMenu label:hover{
+      color: #8f8f8f;
+   }
+   .pageNumbers .pageNumbersActive:hover, .footer__info a:last-child:hover, .dropFilterBtn:hover a, .dropFilterBtn:hover p{
+      color: #000;
    }
    .headerTop__btn1:hover{
-      background-color: #CD5C5C;
+      background-color: #F08080;
    }
    .headerTop__btn2:hover{
       background-color: #fff;
    }
-   .headerBottom__catalog button:hover{
+   .headerBottom__catalog button:hover, .overlayMenu__btn button:hover{
       background-color: #1E90FF;
-   }
-   .footer__info a:last-child:hover{
-      color: #000;
    }
    .footer__arrow:hover{
       transform: translateY(-5px);
    }
-   .bigBtn:hover .bigBtn__items{
-      color: #8F8F8F;
-   }
    .pageNumbers svg:hover{
       transform: translateX(5px);
+   }
+   .headerBottom__btns button:hover{
+      background-color: #3E64FF;
+   }
+   .headerBottom__btns button:hover svg path{
+      fill: #fff;
+   }
+   .menuAcceptBtn:hover, .topCategotyItem:hover{
+      background-color: #3E64FF;
+      color: #fff;
+   }
+   .filterBtn1:hover svg path, .filterBtn2:hover svg path{
+      fill: #3E64FF;
+   }
+   .bigBtn:hover .bigBtnArrow{
+      transform: translateY(3px);
    }
 }

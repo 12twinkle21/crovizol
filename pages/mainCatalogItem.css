@@ -18,6 +18,8 @@
 }
 .mainCatalogItem__priceInfo{
    margin-top: 10px;
+   display: flex;
+   align-items: center;
 }
 .priceInfo__price{
    font-size: 20px;
@@ -47,6 +49,7 @@
    cursor: pointer;
    font-size: 18px;
    font-weight: 500;
+   color: #8f8f8f;
 }
 .btns__amount span{
    font-size: 14px;
@@ -87,8 +90,15 @@
    flex-direction: column;
    display: none;
 }
-.mainCatalogItem__hoverBtns img:first-child{
+.hoverBtnItem{
    margin-bottom: 10px;
+   width: 34px;
+   height: 34px;
+   background-color: #F5F5F5;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 .newCatalogItem::before{
    position: absolute;
@@ -98,6 +108,7 @@
    height: 21px;
    content: '';
    background-image: url(../img/products/productNew.png);
+   background-size: cover;
 }
 .discountCatalogItem::before{
    position: absolute;
@@ -107,9 +118,10 @@
    height: 21px;
    content: '';
    background-image: url(../img/products/productSale.png);
+   background-size: cover;
 }
 
-.mainCatalogItem__btns button:active, .mainCatalogItem__hoverBtns img:active{
+.mainCatalogItem__btns button:active, .mainCatalogItem__hoverBtns svg:active{
    transform: scale(0.9);
 }
 
@@ -122,5 +134,22 @@
    }
    .mainCatalogItem:hover .btns__bottom{
       visibility: visible;
+   }
+   .hoverBtnItem:hover{
+      background-color: #3E64FF;
+   }
+   .hoverBtnItem:hover svg path{
+      fill: #fff;
+   }
+   .btns__inCart button:hover{
+      background-color:#1E90FF;;
+   }
+   .btns__amount button:hover{
+      background-color: #3E64FF;
+      color: #fff;
+   }
+   .btns__fastBuy button:hover{
+      background-color: #3E64FF;
+      color: #fff;
    }
 }

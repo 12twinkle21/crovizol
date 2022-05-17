@@ -1,0 +1,79 @@
+.cityTitle{
+   display: flex;
+   align-items: center;
+}
+.cityTitle h2{
+   font-size: 28px;
+   font-weight: 700;
+   margin-left: 20px;
+}
+.citySearch{
+   padding: 0 68px;
+   margin-top: 25px;
+}
+.citySearch input{
+   height: 48px;
+   width: 100%;
+   max-width: 540px;
+   background-color: #f5f5f5;
+   border: none;
+   border-radius: 6px;
+   padding: 0 20px;
+   outline-color: #3E64FF;
+}
+.cityItems{
+   padding: 0 68px;
+   margin-top: 40px;
+}
+.cityColumn ul{
+   list-style: none;
+}
+.cityColumn ul li{
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 40px;
+   cursor: pointer;
+   width: fit-content;
+}
+.cityItems{
+   margin-bottom: 75px;
+   display: flex;
+}
+.cityItems__left, .cityItems__right{
+   width: 50%;
+   display: flex;
+}
+.cityColumn{
+   width: 50%;
+}
+#activeCityItem{
+   font-weight: 700;
+   position: relative;
+}
+#activeCityItem::before{
+   content: '';
+   width: 24px;
+   height: 24px;
+   background-image: url(../../img/city/activeCityItem.png);
+   background-size: cover;
+   position: absolute;
+   top: 7px;
+   left: -40px;
+}
+.closeCityBtnBlock{
+   max-width: 1600px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: flex-end;
+}
+
+
+@media(hover: hover) and (pointer: fine){
+   .cityColumn ul li:hover{
+      color: #8f8f8f;
+   }
+   #activeCityItem:hover{
+      color: unset;
+   }
+}
+

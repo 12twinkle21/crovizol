@@ -1,0 +1,86 @@
+body, html{
+   overflow: hidden;
+}
+.menuContent{
+   display: flex;
+   margin: 0 auto;
+   margin-top: 25px;
+   max-width: 1600px;
+}
+.menuSelect{
+   width: 30%;
+   background-color: #f5f5f5;
+   height: 100vh;
+   padding: 30px 0 30px 68px;
+}
+.menuSelect ul{
+   list-style: none;
+}
+.menuSelect ul li{
+   font-size: 16px;
+   font-weight: 600;
+   display: flex;
+   align-items: center;
+   padding: 10px 25px;
+   cursor: pointer;
+}
+.menuSelect ul li svg{
+   margin-right: 15px;
+}
+.activeMenuSelectItem{
+   color: #3E64FF;
+   background-color: #fff;
+}
+.activeMenuSelectItem svg path{
+   fill:#3E64FF;
+}
+.menuSelectedContent{
+   padding: 30px 92px 30px 40px;
+   display: flex;
+   flex: 1;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   height: fit-content;
+}
+.selectedContent__column{
+   margin-right: 10px;
+}
+.menuSelectedContent .selectedContent__item{
+   margin-bottom: 30px;
+}
+.menuSelectedContent h3{
+   font-size: 16px;
+   font-weight: 700;
+}
+.selectedContent__item ul{
+   list-style: none;
+   margin-top: 12px;
+}
+.selectedContent__item ul li{
+   margin-bottom: 5px;
+}
+.selectedContent__item a{
+   font-size: 14px;
+   font-weight: 500;
+   text-decoration: none;
+   color: #000;
+   line-height: 24px;
+}
+.menuBlueItem a{
+   color: #3E64FF;
+}
+
+@media(hover: hover) and (pointer: fine){
+   .selectedContent__item a:hover{
+      color: #8f8f8f;
+   }
+   .menuSelect ul li:hover{
+      color: #3E64FF;
+   }
+   .menuSelect ul li:hover svg path{
+      fill: #3E64FF;
+   }
+   .menuBlueItem:hover a{
+      color: #1E90FF;
+   }
+}

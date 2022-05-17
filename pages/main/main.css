@@ -86,40 +86,7 @@
    color: #fff;
    margin-top: 10px;
 }
-.products__items{
-   margin-top: 40px;
-   display: flex;
-   position: relative;
-   padding: 0 10px;
-   justify-content: space-between;
-}
-.products__items::before, .products__items::after{
-   position: absolute;
-   width: 48px;
-   top: 40%;
-   transform: translateY(-50%);
-   height: 48px;
-   content: '';
-   z-index: 100;
-   box-shadow: 0px 22px 60px rgba(0, 0, 0, 0.11), 0px 8.47407px 19.1111px rgba(0, 0, 0, 0.0668148), 0px 1.79259px 4.88889px rgba(0, 0, 0, 0.0431852);
-   background-repeat: no-repeat;
-   background-position: center;
-   border-radius: 50%;
-   background-color: #fff;
-   cursor: pointer;
-}
-.products__items::before{
-   left: -20px;
-   background-image: url(../../img/main/arrowLeft.png);
-}
-.products__items::after{
-   right: -20px;
-   background-image: url(../../img/main/arrowRight.png);
-}
-.products__items .mainCatalogItem{
-   min-width: 16.5%;
-   width: 16.5%;
-}
+
 .promotions{
    display: flex;
    justify-content: space-between;
@@ -226,7 +193,7 @@
    .brands__item:hover, .benefits__item:hover{
       transform: scale(1.1);
    }
-   .bigBtn:hover .bigBtnArrow{
+   .bigBtn:hover .bigBtnArrowBrands{
       transform: translateX(7px);
    }
 }
