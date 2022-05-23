@@ -1,0 +1,193 @@
+.basket3__items p, .basket3__items a, .thanks__items p, .thanks__items a, .error__items p{
+   margin-top: 40px;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 22px;
+}
+.basket3__items a, .thanks__items a{
+   color: #3E64FF;
+}
+.basket3__items button, .thanks__items button, .error__items button{
+   margin-top: 40px;
+   width: 336px;
+   height: 48px;
+   border-radius: 6px;
+   border: none;
+   background-color: #3E64FF;
+   color: #fff;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 20px;
+   cursor: pointer;
+}
+.basket3__wrapper, .thanks__wrapper, .error__wrapper{
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+}
+.basket3__wrapperTop, .thanks__wrapperTop, .error__wrapperTop{
+   flex: 1;
+}
+.basket1__labeles{
+   margin-top: 40px;
+   display: flex;
+   justify-content: space-between;
+}
+.basket1__labeles span{
+   width: 17.5%;
+}
+.basket1__labeles span:first-child{
+   width: 40%;
+}
+.basket1__labeles span:nth-child(2){
+   width: 10%;
+}
+.basket1__labeles span:last-child{
+   width: 15%;
+}
+.basket1__items{
+   margin-top: 15px;
+   border-top: 1px solid #8f8f8f;
+   border-bottom: 1px solid #8f8f8f;
+}
+.basket1__item{
+   padding: 25px 0;
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px dashed #8f8f8f;
+   align-items: center;
+}
+.basket1__item:last-child{
+   border-bottom: none;
+}
+.basket1__itemInfo{
+   width: 40%;
+   display: flex;
+}
+.basket1__itemName{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.basket1__itemName a{
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 19px;
+   color: #3E64FF;
+}
+.basket1__itemCode{
+   background-color: #f5f5f5;
+   height: 34px;
+   width: fit-content;
+   padding: 15px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 200px;
+}
+.basket1__itemCode p, .basket1__itemCode span{
+   font-size: 14px;
+   line-height: 17px;
+}
+.basket1__itemCode p{
+   font-size: 500;
+   color: #8f8f8f;
+}
+.basket1__itemCode span{
+   font-weight: 700;
+   color: #000;
+}
+.basket1__price{
+   width: 10%;
+}
+.basket1__price span{
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 40px;
+}
+.basket1__countAndMeasurement{
+   width: 35%;
+   display: flex;
+}
+.basket1__count{
+   width: 50%;
+   display: flex;
+   align-items: center;
+}
+.basket1__count button{
+   width: 34px;
+   height: 34px;
+   border-radius: 50%;
+   border: none;
+   background-color: #F5F5F5;
+   cursor: pointer;
+   font-size: 28px;
+   font-weight: 500;
+   color: #8f8f8f;
+}
+.basket1__count span{
+   font-size: 16px;
+   font-weight: 600;
+   margin: 0 3px;
+   width: 55px;
+   text-align: center;
+}
+.basket1__measurement{
+   width: 50%;
+   display: flex;
+   justify-content: space-between;
+   height: 40px;
+   width: 130px;
+   padding: 0 15px;
+   border-radius: 6px;
+   background-color: #f5f5f5;
+   align-items: center;
+   cursor: pointer;
+}
+.basket1__measurement p{
+   font-size: 14px;
+   font-weight: 600;
+   line-height: 24px;
+}
+.basket1__totalAndDelete{
+   width: 15%;
+   display: flex;
+}
+.basket1__totalPrice{
+   width: 70%;
+}
+.basket1__totalPrice p{
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 40px;
+}
+.basket1__delete{
+   width: 30%;
+}
+.basket1__delete button{
+   width: 34px;
+   height: 34px;
+   background-color: #f5f5f5;
+   border-radius: 50%;
+   border: none;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+
+.basket3__items button:active, .thanks__items button:active, .error__items button:active{
+   transform: scale(0.9);
+}
+
+@media(hover: hover) and (pointer: fine){
+   .basket3__items button:hover, .thanks__items button:hover, .error__items button:hover{
+      background-color: #1E90FF;
+   }
+   .basket3__items a:hover, .thanks__items a:hover{
+      color: #1E90FF;
+   }
+}

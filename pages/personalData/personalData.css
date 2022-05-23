@@ -1,0 +1,37 @@
+   .personalDataTop{
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22px;
+      margin-top: 40px;
+      max-width: 820px;
+   }
+   .personalData__items{
+      margin-top: 40px;
+      max-width: 815px;
+      margin-bottom: 100px;
+   }
+   .personalData__item{
+      margin-bottom: 40px;
+   }
+   .personalData__item p{
+      margin-top: 25px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+   }
+   .personalData__item h3, .personalData__item span{
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22px;
+   }
+   .personalData__items .personalDataTop{
+      margin-bottom: 40px;
+   }
+   .personalData__item h3{
+      color: #3E64FF;
+   }
+   .personalData__item span{
+      color: #ED6663;
+   }
+
+   

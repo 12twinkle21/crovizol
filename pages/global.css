@@ -200,6 +200,9 @@ body{
    background-color: #3E64FF;
    position: relative;
 }
+#headerBtnHaveCount{
+   position: relative;
+}
 #headerBtnActive svg path{
    fill: #fff;
 }
@@ -598,6 +601,7 @@ body{
    z-index: 1000;
    cursor: pointer;
    background-color: #fff;
+   transform: translateY(-50%);
 }
 .productsArrowLeft{
    top:50%;
@@ -710,14 +714,22 @@ body{
    font-size: 16px;
    font-weight: 500;
 }
+.activeProductBtn svg path{
+   fill: #3E64FF;
+}
+
+
+
 .headerBottom__search input:focus, .overlayMenu__inputs input:focus, .overlayMenu__inputs textarea:focus, .citySearch input:focus{
    background-color: #fff;
 }
 
-.headerBottom__catalog button:active, .headerTop__btns button:active, .headerBottom__btns button:active, .footer__arrow:active .footer__arrowImg, .productsArrowLeft:active, .productsArrowRight:active, .filter__left:active, .menuAcceptBtn:active, .menuCloseBtn:active, .overlayCloseBtn:active, .overlayMenu__btn button:active, .topCategotyItem:active{
+.headerBottom__catalog button:active, .headerTop__btns button:active, .headerBottom__btns button:active, .footer__arrow:active .footer__arrowImg, .filter__left:active, .menuAcceptBtn:active, .menuCloseBtn:active, .overlayCloseBtn:active, .overlayMenu__btn button:active, .topCategotyItem:active{
    transform: scale(0.9);
 }
-
+.productsArrowLeft:active, .productsArrowRight:active{
+   transform: translateY(-50%) scale(0.9);
+}
 
 
 @media(hover: hover) and (pointer: fine){
