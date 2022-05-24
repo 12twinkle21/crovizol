@@ -41,6 +41,7 @@
    align-items: center;
    cursor: pointer;
    user-select: none;
+   transition: transform 0.1s linear;
 }
 .comparison__filtersBtnsItem span{
    font-size: 14px;
@@ -77,6 +78,7 @@
    top:50%;
    right: -40px;
    transform: translateY(-50%);
+   transition: transform 0.1s linear;
 }
 .comparison__item{
    width: 15%;
@@ -124,6 +126,7 @@
    font-size: 18px;
    font-weight: 500;
    color: #8f8f8f;
+   transition: transform 0.1s linear;
 }
 .btns__amount span{
    font-size: 14px;
@@ -140,6 +143,7 @@
    font-weight: 600;
    font-size: 14px;
    color: #fff;
+   transition: transform 0.1s linear;
 }
 .comparison__itemImg img{
    width: 100%;
@@ -159,6 +163,7 @@
    justify-content: center;
    align-items: center;
    z-index: 100;
+   transition: transform 0.1s linear;
 }
 .comparison__itemDeleteBtn{
    top:0;

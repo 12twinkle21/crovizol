@@ -1,0 +1,114 @@
+.contact__items{
+   margin-top: 40px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.contact__item{
+   width: 32%;
+   margin-bottom: 25px;
+   padding: 40px 70px;
+   background-color: #f5f5f5;
+   border-radius: 6px;
+   display: flex;
+   flex-direction: column;
+}
+.contact__itemTitle{
+   position: relative;
+}
+.contact__itemTitle h3{
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 40px;
+}
+.contact__itemIcon{
+   position: absolute;
+   top:0;
+   left: -45px;
+}
+.contact__itemText{
+   margin-top: 15px;
+}
+.contact__itemText p, .contact__itemText a{
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 22px;
+}
+.contact__itemText a{
+   color: #3E64FF;
+}
+.contact__itemContacts{
+   margin-top: 40px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   flex: 1;
+}
+.contact__itemContact{
+   display: flex;
+   align-items: center;
+}
+.contact__itemContact:first-child{
+   margin-bottom: 15px;
+}
+.contact__itemContact a{
+   margin-left: 10px;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 20px;
+   color: #000;
+}
+.contact__itemContact:first-child a{
+   font-weight: 700;
+   text-decoration: none;
+}
+.contact__map{
+   margin-top: 40px;
+}
+.contact__map img{
+   width: 100%;
+   height: auto;
+}
+.contact__requisites{
+   margin: 100px 0;
+}
+.contact__requisites h3{
+   font-size: 28px;
+   font-weight: 700;
+   line-height: 24px;
+}
+.requisites__items{
+   margin-top: 40px;
+   margin-bottom: 100px;
+}
+.requisites__item{
+   display: flex;
+   margin-bottom: 25px;
+   align-items: center;
+}
+.requisites__item:last-child{
+   margin-bottom: 0;
+}
+.requisites__left{
+   display: flex;
+   max-width: 330px;
+   flex: 1;
+   align-items: center;
+}
+.requisites__left span{
+   border-bottom: 1px dashed #8f8f8f;
+   flex: 1;
+   margin: 0 5px;
+   margin-top: 10px;
+}
+
+
+
+@media(hover: hover) and (pointer: fine){
+   .contact__itemText a:hover{
+      color: #1E90FF;
+   }
+   .contact__itemContact a:hover{
+      color: #8f8f8f;
+   }
+}

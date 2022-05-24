@@ -23,6 +23,7 @@
 }
 .selectedFilter svg{
    cursor: pointer;
+   transition: transform 0.1s linear;
 }
 .selectedFilter span:first-child{
    font-size: 12px;

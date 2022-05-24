@@ -19,6 +19,7 @@
    font-weight: 700;
    line-height: 20px;
    cursor: pointer;
+   transition: transform 0.1s linear;
 }
 .basket3__wrapper, .thanks__wrapper, .error__wrapper{
    display: flex;
@@ -68,6 +69,7 @@
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+   margin-left: 25px;
 }
 .basket1__itemName a{
    font-size: 16px;
@@ -124,6 +126,7 @@
    font-size: 28px;
    font-weight: 500;
    color: #8f8f8f;
+   transition: transform 0.1s linear;
 }
 .basket1__count span{
    font-size: 16px;
@@ -143,6 +146,8 @@
    background-color: #f5f5f5;
    align-items: center;
    cursor: pointer;
+   user-select: none;
+   transition: transform 0.1s linear;
 }
 .basket1__measurement p{
    font-size: 14px;
@@ -153,16 +158,21 @@
    width: 15%;
    display: flex;
 }
-.basket1__totalPrice{
+.basket1__itemTotalPrice{
    width: 70%;
 }
-.basket1__totalPrice p{
+.basket1__itemTotalPrice p{
    font-size: 20px;
    font-weight: 700;
    line-height: 40px;
 }
-.basket1__delete{
-   width: 30%;
+.basket1__itemTotalPrice span{
+   position: absolute;
+   color: #ED6663;
+   font-size: 14px;
+   font-weight: 600;
+   line-height: 26px;
+   text-decoration: line-through;
 }
 .basket1__delete button{
    width: 34px;
@@ -174,20 +184,181 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   transition: transform 0.1s linear;
+}
+.basket1__totalPrice{
+   margin-top: 25px;
+   text-align: end;
+   margin-right: 60px;
+}
+.basket1__totalPrice p{
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 24px;
+}
+.basket1__totalPrice span{
+   font-size: 36px;
+   line-height: 43px;
+   margin-left: 15px;
+}
+.basket1__form{
+   margin-top: 100px;
+   max-width: 815px;
+}
+.basket1__formItem{
+   margin-bottom: 100px;
+}
+.basket1__formItem h3{
+   font-size: 28px;
+   font-weight: 700;
+   line-height: 24px;
+}
+.formItem__btns{
+   width: 100%;
+   display: flex;
+   margin-top: 40px;
+   background-color: #f5f5f5;
+   border-radius: 6px;
+   padding: 10px;
+   gap: 10px;
+}
+.formItem__btns button{
+   width: 50%;
+   height: 48px;
+   border: none;
+   border-radius: 6px;
+   cursor: pointer;
+   background-color: #fff;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 24px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: transform 0.1s linear;
+}
+.formItem__btns svg{
+   margin-right: 10px;
+}
+.formItem__btns .formItem__activeBtn{
+   background-color: #3E64FF;
+   color: #fff
+}
+.formItem__btns .formItem__activeBtn svg path{
+   fill: #fff;
+}
+.formItem__inputs{
+   margin-top: 40px;
+}
+.formItem__inputs input, .formItem__inputs textarea{
+   margin-bottom: 20px;
+   width: 70%;
+   height: 40px;
+   background-color: #f5f5f5;
+   border: none;
+   border-radius: 6px;
+   outline-color: #3E64FF;
+   padding: 0 15px;
+   font-size: 14px;
+   font-weight: 600;
+   line-height: 24px;
+}
+.formItem__inputs input::placeholder, .formItem__inputs textarea::placeholder{
+   font-weight: 500;
+   color: #8f8f8f;
+}
+#formItem__smallBtn{
+   width: 33.3%;
+}
+#longInput{
+   width: 100%;
+}
+.formItem__inputs input:last-child{
+   margin-bottom: 0;
+}
+.formItem__inputs textarea{
+   height: 120px;
+   padding: 15px;
+   resize: none;
+   margin-bottom: 60px;
+}
+.formItem__checkbox{
+   display: flex;
+   user-select: none;
+}
+.formItem__checkbox input{
+   width: 20px;
+   height: 20px;
+   background-color: unset;
+   outline-color: unset;
+   padding: unset;
+   font-size: unset;
+   font-weight: unset;
+   line-height: unset;
+   cursor: pointer;
+}
+.formItem__checkbox label{
+   font-size: 13px;
+   font-weight: 500;
+   line-height: 20px;
+   margin-left: 10px;
+   cursor: pointer;
+}
+.formItem__checkbox a{
+   color: #3E64FF;
+}
+.formItem__inputs button{
+   margin-top: 40px;
+   height: 48px;
+   padding: 0 95px;
+   border: none;
+   border-radius: 6px;
+   background-color: #3E64FF;
+   color: #fff;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 20px;
+   cursor: pointer;
+   transition: transform 0.1s linear;
+}
+.invalidInputBlock{
+   width: 100%;
 }
 
 
+.formItem__inputs input:focus, .formItem__inputs textarea:focus{
+   background-color: #fff;
+}
 
-
-.basket3__items button:active, .thanks__items button:active, .error__items button:active{
+.basket3__items button:active, .thanks__items button:active, .error__items button:active, .basket1__count button:active, .basket1__measurement:active, .basket1__delete button:active, .formItem__btns button:active, .formItem__inputs button:active{
    transform: scale(0.9);
 }
 
 @media(hover: hover) and (pointer: fine){
-   .basket3__items button:hover, .thanks__items button:hover, .error__items button:hover{
+   .basket3__items button:hover, .thanks__items button:hover, .error__items button:hover, .formItem__inputs button:hover{
       background-color: #1E90FF;
    }
-   .basket3__items a:hover, .thanks__items a:hover{
+   .basket3__items a:hover, .thanks__items a:hover, .basket1__itemName a:hover, .formItem__checkbox a:hover{
       color: #1E90FF;
+   }
+   .basket1__count button:hover{
+      background-color: #3E64FF;
+      color: #fff;
+   }
+   .basket1__measurement:hover p{
+      color: #8f8f8f;
+   }
+   .basket1__delete:hover{
+      filter: brightness(95%);
+   }
+   .basket1__delete button:hover svg path{
+      fill: red;
+   }
+   .formItem__btns button:hover{
+      background-color: #3E64FF;
+      color: #fff;
+   }
+   .formItem__btns button:hover svg path{
+      fill: #fff;
    }
 }

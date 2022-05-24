@@ -32,6 +32,7 @@
    cursor: pointer;
    border-radius: 50%;
    margin-right: 15px;
+   transition: transform 0.1s linear;
 }
 .bigProduct__top button:last-child{
    margin-right: 0;
@@ -62,6 +63,7 @@
    justify-content: center;
    align-items: center;
    cursor: pointer;
+   transition: transform 0.1s linear;
 }
 .bigProduct__setting span{
    font-size: 14px;
@@ -124,6 +126,7 @@
    font-size: 18px;
    color: #8f8f8f;
    cursor: pointer;
+   transition: transform 0.1s linear;
 }
 .bigProduct__amount span{
    font-size: 20px;
@@ -148,6 +151,7 @@
    border-radius: 6px;
    cursor: pointer;
    font-size: 16px;
+   transition: transform 0.1s linear;
 }
 .bigProduct__btns button:first-child{
    margin-right: 25px;
@@ -173,6 +177,7 @@
    font-size: 14px;
    font-weight: 600;
    margin-right: 10px;
+   transition: transform 0.1s linear;
 }
 .bigProducts__infoBtns button:last-child{
    margin-right: 0;
@@ -219,6 +224,7 @@
    align-items: center;
    border-radius: 50%;
    cursor: pointer;
+   transition: transform 0.1s linear;
 }
 .leftSlider__arrowBottom{
    margin-top: 25px;
@@ -231,6 +237,7 @@
    width: 100px;
    height: 100px;
    cursor: pointer;
+   transition: transform 0.1s linear;
 }
 .leftSlider__itemActive{
    border-color: #3E64FF;
@@ -315,6 +322,7 @@
    color: #fff;
    margin-top: 25px;
    cursor: pointer;
+   transition: transform 0.1s linear;
 }
 .bigProducts__documentBlock{
    margin-bottom: 40px;
@@ -355,6 +363,7 @@
    border-radius: 6px;
    margin-right: 25px;
    cursor: pointer;
+   transition: transform 0.1s linear;
 }
 .reviewTop__filter p{
    font-size: 14px;
@@ -370,6 +379,7 @@
    color: #fff;
    font-size: 14px;
    font-weight: 600;
+   transition: transform 0.1s linear;
 }
 .reviewItems{
    max-width: 815px;

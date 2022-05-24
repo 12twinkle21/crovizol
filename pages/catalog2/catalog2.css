@@ -53,6 +53,7 @@
    justify-content: center;
    align-items: center;
    cursor: pointer;
+   transition: transform 0.1s linear;
 }
 .catalog2__price{
    display: flex;
@@ -76,6 +77,7 @@
    font-size: 18px;
    font-weight: 500;
    color: #8f8f8f;
+   transition: transform 0.1s linear;
 }
 .catalog2__amount span{
    font-size: 14px;
@@ -92,6 +94,7 @@
    font-weight: 600;
    font-size: 14px;
    color: #fff;
+   transition: transform 0.1s linear;
 }
 .catalog2__fastBuy{
    margin-top: 25px;
@@ -106,6 +109,7 @@
    font-weight: 500;
    color: #3E64FF;
    cursor: pointer;
+   transition: transform 0.1s linear;
 }
 .catalog2__itemBtns button:first-child{
    margin-right: 15px;
