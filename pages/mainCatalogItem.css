@@ -69,6 +69,9 @@
    color: #fff;
    transition: transform 0.1s linear;
 }
+.btns__inCart button svg{
+   display: none;
+}
 .btns__bottom{
    margin-top: 12px;
    visibility: hidden;
@@ -114,7 +117,8 @@
    height: 21px;
    content: '';
    background-image: url(../img/products/productNew.png);
-   background-size: cover;
+   background-size: contain;
+   background-repeat: no-repeat;
 }
 .discountCatalogItem::before{
    position: absolute;
@@ -124,7 +128,8 @@
    height: 21px;
    content: '';
    background-image: url(../img/products/productSale.png);
-   background-size: cover;
+   background-size: contain;
+   background-repeat: no-repeat;
 }
 
 .mainCatalogItem__btns button:active, .mainCatalogItem__hoverBtns svg:active{
@@ -157,5 +162,62 @@
    .btns__fastBuy button:hover{
       background-color: #3E64FF;
       color: #fff;
+   }
+}
+
+
+
+
+
+@media(max-width: 1580px){
+   .products__items .mainCatalogItem{
+      width: 20%;
+      min-width: 20%;
+   }
+}
+
+@media(max-width: 1360px){
+   .products__items .mainCatalogItem{
+      width: 25%;
+      min-width: 25%;
+   }
+}
+
+@media(max-width: 1023px){
+   .products__items .mainCatalogItem{
+      width: 30%;
+      min-width: 30%;
+   }
+   .mainCatalogItem__hoverBtns{
+      display: flex;
+   }
+   .btns__bottom{
+      visibility: unset;
+   }
+}
+@media(max-width: 850px){
+   .products__items .mainCatalogItem{
+      width: 40%;
+      min-width: 40%;
+   }
+}
+@media(max-width: 750px){
+   .btns__inCart button{
+      font-size: 0;
+   }
+   .btns__inCart button svg{
+      display: block;
+   }
+}
+@media(max-width: 600px){
+   .products__items .mainCatalogItem, .brands .brands__item{
+      width: 60%;
+      min-width: 60%;
+   }
+}
+@media(max-width: 450px){
+   .products__items .mainCatalogItem, .brands .brands__item{
+      width: 80%;
+      min-width: 80%;
    }
 }

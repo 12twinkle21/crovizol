@@ -6,3 +6,36 @@
 .mainCatalogItem{
    width: 25%;
 }
+
+
+@media(max-width: 1450px){
+   .mainCatalogItem{
+      width: 33.3%;
+   }
+}
+@media(max-width: 800px){
+   .mainCatalogItem{
+      width: 50%;
+   }
+}
+@media(max-width: 750px){
+   .btns__amount{
+      display: none;
+   }
+   .mainCatalogItem .btns__inCart button{
+      font-size: 14px;
+      width: 100%;
+   }
+   .btns__inCart{
+      width: 100%;
+   }
+}
+@media(max-width: 450px){
+   .mainCatalogItem .mainCatalogItem__name{
+      overflow: hidden;
+      height: 77px;
+   }
+   .search2__products .mainCatalogItem{
+      padding: 8px;
+   }
+}
