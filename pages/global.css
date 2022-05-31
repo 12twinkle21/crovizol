@@ -709,6 +709,7 @@ body{
    font-weight: 700;
    margin-right: 10px;
    transition: transform 0.1s linear;
+   color: #000;
 }
 .bigBtnArrow, .pageNumbers svg, .bigBtnArrowBrands{
    transition: linear transform 0.1s;
