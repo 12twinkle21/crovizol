@@ -1,10 +1,10 @@
-.basket3__items p, .basket3__items a, .thanks__items p, .thanks__items a, .error__items p{
+.basket3__items p, .thanks__items p, .thanks__items a, .error__items p{
    margin-top: 40px;
    font-size: 16px;
    font-weight: 400;
    line-height: 22px;
 }
-.basket3__items a, .thanks__items a{
+ .thanks__items a{
    color: #3E64FF;
 }
 .basket3__items button, .thanks__items button, .error__items button{
@@ -340,7 +340,7 @@
    .basket3__items button:hover, .thanks__items button:hover, .error__items button:hover, .formItem__inputs button:hover{
       background-color: #1E90FF;
    }
-   .basket3__items a:hover, .thanks__items a:hover, .basket1__itemName a:hover, .formItem__checkbox a:hover{
+   .thanks__items a:hover, .basket1__itemName a:hover, .formItem__checkbox a:hover{
       color: #1E90FF;
    }
    .basket1__count button:hover{
