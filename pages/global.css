@@ -1413,6 +1413,12 @@ body{
    .headerTop, .headerBottom, .wrapper, #headerBottom__searchMin{
       padding: 0 15px;
    }
+   .footer{
+      padding: 30px 15px;
+   }
+   .footer__call a:first-child{
+      font-size: 20px;
+   }
    #headerBottom__searchMin::after{
       right: 35px;
    }
@@ -1479,6 +1485,15 @@ body{
    }
    .topTitle h2{
       font-size: 18px;
+   }
+   .topTitle p{
+      font-size: 13px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+   }
+   .aboutCompany{
+      padding-bottom: 50px;
    }
 }
 @media(max-width: 600px){

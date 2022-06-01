@@ -30,3 +30,18 @@
 .delivery__item span{
    color: #ED6663;
 }
+
+
+@media(max-width: 750px){
+   .delivery__items{
+      margin-bottom: 50px;
+      margin-top: 25px;
+   }
+   .delivery__item p, .deliveryTop{
+      font-size: 14px;
+      margin-top: 15px;
+   }
+   .delivery__item{
+      margin-bottom: 25px;
+   }
+}

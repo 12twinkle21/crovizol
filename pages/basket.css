@@ -9,7 +9,8 @@
 }
 .basket3__items button, .thanks__items button, .error__items button{
    margin-top: 40px;
-   width: 336px;
+   width: 100%;
+   max-width: 336px;
    height: 48px;
    border-radius: 6px;
    border: none;
@@ -20,6 +21,7 @@
    line-height: 20px;
    cursor: pointer;
    transition: transform 0.1s linear;
+   margin-bottom: 50px;
 }
 .basket3__wrapper, .thanks__wrapper, .error__wrapper{
    display: flex;
@@ -360,5 +362,16 @@
    }
    .formItem__btns button:hover svg path{
       fill: #fff;
+   }
+}
+
+
+
+@media(max-width: 750px){
+   .basket3__items p, .thanks__items p, .error__items p{
+      margin-top: 15px;
+   }
+   .basket3__items button, .thanks__items button, .error__items button{
+      margin-top: 25px;
    }
 }

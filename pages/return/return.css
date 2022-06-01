@@ -45,3 +45,22 @@
       color: #8f8f8f;
    }
    
+
+   @media(max-width: 750px){
+      .returnTop, .return__item p{
+         margin-top: 15px;
+         font-size: 14px;
+      }
+      .return__items{
+         margin-top: 25px;
+      }
+      .return__item{
+         margin-bottom: 25px;
+      }
+      .return__items .returnTop{
+         margin-bottom: 25px;
+      }
+      .returnAlert{
+         margin-bottom: 50px;
+      }
+   }

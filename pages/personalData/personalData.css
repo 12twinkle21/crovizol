@@ -35,3 +35,16 @@
    }
 
    
+   @media(max-width: 750px){
+      .personalDataTop, .personalData__item p{
+         margin-top: 15px;
+         font-size: 14px;
+      }
+      .personalData__items{
+         margin-top: 25px;
+         margin-bottom: 50px;
+      }
+      .personalData__item{
+         margin-bottom: 25px;
+      }
+   }

@@ -157,3 +157,32 @@
       background-color: #1E90FF;
    }
 }
+
+
+@media(max-width: 750px){
+   .catalog2__item{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .catalog2__middle{
+      max-width: unset;
+   }
+   .catalog2__right{
+      margin-top: 20px;
+      width: 100%;
+      max-width: 320px;
+   }
+   .catalog2__itemBtns{
+      margin-top: 20px;
+   }
+   .catalog2__inCartBtn{
+      width: 70%;
+   }
+   .catalog2__inCartBtn button{
+      width: 100%;
+   }
+   .catalog2__btns{
+      justify-content: space-between;
+   }
+}

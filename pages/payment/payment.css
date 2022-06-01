@@ -24,3 +24,15 @@
    margin-top: 30px;
 }
 
+@media(max-width: 750px){
+   .payment__itemText p{
+      font-size: 14px;
+      margin-top: 10px;
+   }
+   .payment__items{
+      margin-bottom: 50px;
+   }
+   .payment__item{
+      margin-bottom: 25px;
+   }
+}
