@@ -58,6 +58,20 @@
    .selectedFilters{
       display: none;
    }
+   .topCategoryItem:nth-child(n+8){
+      display: none;
+   }
+   .topCategoryItems .topCategoryItem__moreBtn{
+      display: flex;
+   }
+}
+@media(max-width: 850px){
+   .topCategoryItem:nth-child(n+6){
+      display: none;
+   }
+   .topCategoryItems .topCategoryItem__moreBtn{
+      display: flex;
+   }
 }
 @media(max-width: 800px){
    .mainCatalogItem{
@@ -74,6 +88,14 @@
    }
    .btns__inCart{
       width: 100%;
+   }
+}
+@media(max-width: 600px){
+   .topCategoryItem:nth-child(n+3){
+      display: none;
+   }
+   .topCategoryItems .topCategoryItem__moreBtn{
+      display: flex;
    }
 }
 @media(max-width: 450px){
