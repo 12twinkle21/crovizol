@@ -72,6 +72,7 @@
    flex-direction: column;
    justify-content: space-between;
    margin-left: 25px;
+   margin-right: 10px;
 }
 .basket1__itemName a{
    font-size: 16px;
@@ -88,13 +89,14 @@
    justify-content: center;
    align-items: center;
    border-radius: 200px;
+   margin-top: 15px;
 }
 .basket1__itemCode p, .basket1__itemCode span{
    font-size: 14px;
    line-height: 17px;
 }
 .basket1__itemCode p{
-   font-size: 500;
+   font-weight: 500;
    color: #8f8f8f;
 }
 .basket1__itemCode span{
@@ -110,8 +112,9 @@
    line-height: 40px;
 }
 .basket1__countAndMeasurement{
-   width: 35%;
+   width: 70%;
    display: flex;
+   align-items: center;
 }
 .basket1__count{
    width: 50%;
@@ -142,7 +145,7 @@
    display: flex;
    justify-content: space-between;
    height: 40px;
-   width: 130px;
+   max-width: 130px;
    padding: 0 15px;
    border-radius: 6px;
    background-color: #f5f5f5;
@@ -157,7 +160,7 @@
    line-height: 24px;
 }
 .basket1__totalAndDelete{
-   width: 15%;
+   width: 30%;
    display: flex;
 }
 .basket1__itemTotalPrice{
@@ -326,6 +329,30 @@
 .invalidInputBlock{
    width: 100%;
 }
+.basket1__right{
+   display: flex;
+   width: 50%;
+}
+.formItem__minBtn{
+   display: none;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #f5f5f5;
+   border-radius: 6px;
+   padding: 0 14px;
+   height: 40px;
+   margin-top: 35px;
+}
+.formItem__minBtnLeft{
+   display: flex;
+   align-items: center;
+}
+.formItem__minBtnLeft p{
+   margin-left: 10px;
+   font-size: 14px;
+   font-weight: 600;
+   line-height: 20px;
+}
 
 
 .formItem__inputs input:focus, .formItem__inputs textarea:focus{
@@ -365,7 +392,80 @@
    }
 }
 
-
+@media(max-width: 1023px){
+   .basket1__price, .basket1__labeles{
+      display: none;
+   }
+   .basket1__itemName a{
+      height: 58px;
+      overflow: hidden;
+   }
+   .basket1__itemInfo{
+      width: 50%;
+   }
+   .basket1__countAndMeasurement{
+      flex-direction: column-reverse;
+      align-items: flex-end;
+   }
+   .basket1__count{
+      justify-content: flex-end;
+   }
+   .basket1__countAndMeasurement, .basket1__totalAndDelete{
+      width: 50%;
+   }
+   .basket1__count, .basket1__measurement{
+      width: 100%;
+   }
+   .basket1__count{
+      margin-top: 33px;
+   }
+   .basket1__totalAndDelete{
+      flex-direction: column;
+      align-items: flex-end;
+   }
+   .basket1__itemTotalPrice{
+      width: 100%;
+      text-align: end;
+      margin-bottom: 33px;
+      position: relative;
+   }
+   .basket1__itemTotalPrice span{
+      bottom: -15px;
+      right: 0
+   }
+   .basket1__itemTotalPrice p{
+      font-size: 18px;
+   }
+   .basket1__totalPrice{
+      margin-right: 0;
+   }
+   .basket1__totalPrice p{
+      font-size: 18px;
+   }
+   .basket1__totalPrice span{
+      font-size: 32px;
+   }
+   .basket1__form{
+      max-width: unset;
+   }
+   .formItem__inputs input{
+      width: 46.5%;
+      margin-right: 20px;
+   }
+   .formItem__inputs input[type='checkbox']{
+      width: 20px;
+      margin-right: 0;
+   }
+   .basket1__formItem h3{
+      font-size: 24px;
+   }
+   .basket1__formItem{
+      margin-bottom: 60px;
+   }
+   .formItem__inputs button, .formItem__inputs textarea{
+      width: 100%;
+   }
+}
 
 @media(max-width: 750px){
    .basket3__items p, .thanks__items p, .error__items p{
@@ -373,5 +473,79 @@
    }
    .basket3__items button, .thanks__items button, .error__items button{
       margin-top: 25px;
+   }
+   .basket1__item{
+      display: block;
+   }
+   .basket1__itemInfo, .basket1__right{
+      width: 100%;
+      max-width: 420px;
+   }
+   .basket1__right{
+      margin-top: 25px;
+   }
+   .basket1__countAndMeasurement{
+      align-items: flex-start;
+      flex-direction: column;
+      margin-top: 3px;
+   }
+   .basket1__count{
+      justify-content: flex-start;
+      margin-top: 0;
+      margin-bottom: 15px;
+   }
+   .basket1__itemTotalPrice{
+      margin-bottom: 15px;
+   }
+   .basket1__itemCode{
+      height: 27px;
+   }
+   .basket1__itemCode p, .basket1__itemCode span{
+      font-size: 12px;
+   }
+   .basket1__itemTotalPrice p{
+      font-size: 20px;
+   }
+   .basket1__itemName{
+      margin-right: 0;
+      margin-left: 5px;
+   }
+   .basket1__totalPrice p{
+      font-size: 18px;
+   }
+   .basket1__totalPrice span{
+      font-size: 28px;
+   }
+   .basket1__form{
+      margin-top: 50px;
+   }
+   .formItem__minBtn{
+      display: flex;
+   }
+   .formItem__btns{
+      display: none;
+   }
+   .formItem__inputs{
+      margin-top: 15px;
+   }
+   .formItem__inputs input{
+      margin-bottom: 15px;
+      width: 100%;
+   }
+   .formItem__inputs textarea{
+      margin-bottom: 40px;
+   }
+   .formItem__inputs button{
+      padding: 0;
+   }
+   .formItem__inputs input[type='checkbox']{
+      margin-bottom: 0;
+      min-width: 20px;
+   }
+   .formItem__checkbox{
+      align-items: center;
+   }
+   .formItem__checkbox:first-child{
+      margin-bottom: 15px;
    }
 }

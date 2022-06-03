@@ -20,6 +20,7 @@ body, html{
    font-size: 14px;
    font-weight: 600;
    margin-right: 5px;
+   white-space: nowrap;
 }
 .fileBlock button{
    height: 40px;
@@ -44,5 +45,17 @@ body, html{
    }
    .fileBlock:hover .addFileBtn svg path, .fileItem:hover svg path{
       fill: #3E64FF;
+   }
+}
+
+
+@media(max-width: 750px){
+   .fileItem{
+      overflow: hidden;
+      margin-right: 5px;
+   }
+   .fileItem p{
+      overflow: hidden;
+      text-overflow: ellipsis;
    }
 }

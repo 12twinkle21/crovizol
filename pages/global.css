@@ -26,7 +26,7 @@ body{
    z-index: 10000;
 }
 .overlayMenu{
-   width: 35%;
+   width: 40%;
    padding: 60px;
    background-color: #fff;
    position: absolute;
@@ -849,6 +849,7 @@ body{
 }
 .overlayMenu__checkbox input{
    width: 20px;
+   min-width: 20px;
    height: 20px;
    margin-right: 10px;
    cursor: pointer;
@@ -1288,6 +1289,13 @@ body{
    .headerBottom__btns button:last-child{
       margin-right: 0;
    }
+   .overlayMenu{
+      padding: 30px
+   }
+   .overlayCloseBtn{
+      top: 15px;
+      right: 15px;
+   }
 }
 @media (max-width: 1150px){
    .headerBottom__call a:first-child{
@@ -1382,6 +1390,12 @@ body{
    }
    .topCategoryItem:last-child{
       margin-right: 0;
+   }
+   .headerBottom__logo img{
+      transform: scale(0.9);
+   }
+   .overlayMenu{
+      width: 60%;
    }
 }
 @media(max-width: 750px){
@@ -1481,6 +1495,30 @@ body{
    }
    .aboutCompany{
       padding-bottom: 50px;
+   }
+   .bigProduct .bigProduct__settings{
+      margin-bottom: 15px;
+   }
+   .overlayMenu{
+      width: 100%;
+      padding: 30px 15px;
+   }
+   .overlayMenu__inputs input{
+      margin-bottom: 15px;
+   }
+   .overlayMenu__inputs textarea{
+      height: 138px;
+   }
+   .overlayMenu__title h2{
+      font-size: 18px;
+   }
+   .overlayMenu__btn button{
+      width: 100%;
+      max-width: 400px;
+   }
+   .overlayCloseBtn{
+      width: 38px;
+      height: 38px;
    }
 }
 @media(max-width: 600px){
