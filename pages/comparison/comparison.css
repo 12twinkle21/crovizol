@@ -14,6 +14,7 @@
 }
 .comparison__check input{
    width: 20px;
+   min-width: 20px;
    height: 20px;
    border-radius: 4px;
    margin-right: 12px;
@@ -43,6 +44,9 @@
    user-select: none;
    transition: transform 0.1s linear;
 }
+.comparison__filtersBtnsItem svg{
+   min-width: 20px;
+}
 .comparison__filtersBtnsItem span{
    font-size: 14px;
    font-weight: 500;
@@ -56,12 +60,23 @@
 .comparison__filtersBtnsItem:last-child span{
    color: #3E64FF;
 }
+.comparison__itemsBlock{
+   position: relative;
+}
 .comparison__items{
    display: flex;
    justify-content: space-between;
    align-items: center;
    margin-top: 40px;
-   position: relative;
+}
+.comparison__itemsFixed{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: #fff;
+   margin-top: 0;
+   box-shadow: 0px 22px 60px rgba(0, 0, 0, 0.11), 0px 8.47407px 19.1111px rgba(0, 0, 0, 0.0668148), 0px 1.79259px 4.88889px rgba(0, 0, 0, 0.0431852);
 }
 .comparisonArrowRight{
    box-shadow: 0px 22px 60px rgba(0, 0, 0, 0.11), 0px 8.47407px 19.1111px rgba(0, 0, 0, 0.0668148), 0px 1.79259px 4.88889px rgba(0, 0, 0, 0.0431852);
@@ -72,7 +87,7 @@
    justify-content: center;
    align-items: center;
    position: absolute;
-   z-index: 1000;
+   z-index: 10000;
    cursor: pointer;
    background-color: #fff;
    top:50%;
@@ -208,6 +223,9 @@
 .tableNoDataItem{
    color: #8f8f8f;
 }
+.comparison__minFilterLable{
+   display: none;
+}
 
 
 .comparison__filtersBtnsItem:active, .comparison__itemDeleteBtn:active, .comparison__itemFavoriteBtn:active, .btns__amount button:active, .btns__inCart button:active{
@@ -253,5 +271,97 @@
    }
    .btns__inCart button:hover{
       background-color: #1E90FF;
+   }
+}
+
+
+@media(max-width: 1550px){
+   .comparison__items, .trableRow__items{
+      overflow: hidden;
+   }
+   .comparison__item, .trableRow__items p{
+      width: 20%;
+      min-width: 20%;
+      padding: 0 15px;
+   }
+   .comparison__tableRow span{
+      margin-left: 15px;
+   }
+}
+@media(max-width: 1350px){
+   .comparison__item, .trableRow__items p{
+      width: 25%;
+      min-width: 25%;
+   }
+}
+@media(max-width: 1150px){
+   .comparisonArrowRight{
+      right: -10px;
+   }
+}
+@media(max-width: 1023px){
+   .comparisonArrowRight{
+      display: none;
+   }
+   .comparison__item, .trableRow__items p{
+      width: 33.3%;
+      min-width: 33.3%;
+   }
+}
+@media(max-width: 750px){
+   .comparison__item, .trableRow__items p{
+      width: 50%;
+      min-width: 50%;
+      padding: 0 5px;
+   }
+   .comparison__tableRow span{
+      margin-left: 5px;
+   }
+   .comparison__itemBtns .btns__amount{
+      display: none;
+   }
+   .btns__inCart, .btns__inCart button{
+      width: 100%;
+   }
+   .comparison__item .comparison__itemPrice p{
+      font-size: 18px;
+      height: unset;
+      max-height: unset;
+   }
+   .comparison__item .comparison__itemPrice span{
+      font-size: 13px;
+   }
+   .comparison__item p{
+      height: 78px;
+      max-height: 78px;
+      overflow: hidden;
+      font-size: 14px;
+   }
+   .comparison__table{
+      margin-top: 50px;
+   }
+   .comparison__check label{
+      display: none;
+   }
+   .comparison__check .comparison__minFilterLable{
+      display: block;
+   }
+   .comparison__filtersBtnsItem span{
+      display: none;
+   }
+   .comparison__filtersBtnsBorder{
+      margin: 0 15px;
+   }
+   .comparison__filters{
+      margin-top: 15px;
+   }
+   .comparison__table{
+      margin-bottom: 50px;
+   }
+   .comparison__itemsFixed .comparison__item .comparison__itemImg, .comparison__itemsFixed .comparison__item .comparison__itemBtns{
+      display: none;
+   }
+   .comparison__itemsFixed{
+      padding: 15px 0;
    }
 }

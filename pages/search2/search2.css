@@ -29,6 +29,9 @@
    .btns__inCart{
       width: 100%;
    }
+   .mainCatalogItem .mainCatalogItem__name p{
+      font-size: 14px;
+   }
 }
 @media(max-width: 450px){
    .mainCatalogItem .mainCatalogItem__name{

@@ -89,6 +89,9 @@
    .btns__inCart{
       width: 100%;
    }
+   .mainCatalogItem .mainCatalogItem__name p{
+      font-size: 14px;
+   }
 }
 @media(max-width: 600px){
    .topCategoryItem:nth-child(n+3){

@@ -1,0 +1,18 @@
+В pageNumbers активная страница определяется классом pageNumbersActive
+На странице menu активная категория определяется классом activeMenuSelectItem
+На странице city активный город определяется id activeCityItem
+В headerBottom__btns активная кнопка определяется id headerBtnActive
+При фильтрации отображения продуктов активная кнопка определяется классом activeFilterBtn
+Невалидному инпуту нужно дававлять id invalidInput
+Для активной кнопки информации у большого товара нужно добавить id bigProducts__infoBtnsActive
+Для активной кнопки настроек у большого товара нужно добавить класс bigProduct__settingActive
+Для активного предмета у левого слайдера большого товара нужно добавить класс leftSlider__itemActive
+На странице comparison для элемента, у которого нет данных, нужно добавить класс tableNoDataItem
+Для активной кнопки добавления в категорию продуктов( к примеру при добавлении в закладки) нужно добавить класс activeProductBtn
+Для активный кнопки в форме на странице basket нужно добавить класс formItem__activeBtn
+Для активной кнопки категории на страницах нужно добавить класс topCategoryItemActive
+Оверлею добавлять класс activeOverlay
+Для активного поиска нужно блоку activeSearchMenu добавить класс activeSearchMenuActive и блоку headerBottom__search добавить класс activeSearch
+Для открытия главного мобильного меню нужно блоку mainMenu добавить класс mainMenuActive
+Для открытия мобильных меню, нужно добавить блокам mobMenu1 или mobMenu2 классы mobMenu1Active или mobMenu2Active
+На странице comparison, для прилипания товаров нужно добавить блоку comparison__items класс comparison__itemsFixed

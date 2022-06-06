@@ -77,3 +77,44 @@
    }
 }
 
+@media(max-width: 1023px){
+   .cityItems__left, .cityItems__right{
+      display: block;
+   }
+   .cityItems, .citySearch{
+      padding: 0 30px;
+   }
+   .cityColumn{
+      width: 100%;
+   }
+}
+@media(max-width: 750px){
+   .cityTitle img{
+      width: 38px;
+      height: 38px;
+   }
+   #activeCityItem::before{
+      display: none;
+   }
+   .closeCityBtnBlock .menuCloseBtn{
+      width: 38px;
+      height: 38px;
+      margin-right: 15px;
+      margin-top: 15px;
+   }
+   .cityTitle h2{
+      font-size: 24px;
+   }
+   .cityColumn ul li{
+      font-size: 14px;
+      text-align: center;
+   }
+   .cityItems, .citySearch{
+      padding: 0;
+   }
+   .cityColumn ul{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+}

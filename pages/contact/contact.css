@@ -86,6 +86,14 @@
    margin-bottom: 25px;
    align-items: center;
 }
+.requisites__item p{
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 20px;
+}
+.requisites__left p{
+   color: #8f8f8f;
+}
 .requisites__item:last-child{
    margin-bottom: 0;
 }
@@ -101,6 +109,24 @@
    margin: 0 5px;
    margin-top: 10px;
 }
+.topCategoryItems__minBtn{
+   width: 100%;
+   height: 40px;
+   border-radius: 6px;
+   background-color: #f5f5f5;
+   padding: 0 15px;
+   display: none;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 15px;
+}
+.topCategoryItems__minBtn p{
+   font-size: 14px;
+   font-weight: 600;
+}
+#mapMin{
+   display: none;
+}
 
 
 
@@ -110,5 +136,91 @@
    }
    .contact__itemContact a:hover{
       color: #8f8f8f;
+   }
+}
+
+
+
+@media(max-width: 1150px){
+   .contact__item{
+      padding: 30px 55px;
+   }
+}
+@media(max-width: 1023px){
+   .contact__item{
+      width: 49%;
+   }
+   .topCategoryItems .topCategoryItem:nth-child(n+11){
+      display: none;
+   }
+   .topCategoryItems .topCategoryItem__moreBtn{
+      display: flex !important;
+   }
+   .requisites__item p{
+      max-width: 350px;
+   }
+   .contact__requisites h3{
+      font-size: 24px;
+   }
+}
+@media(max-width: 750px){
+   .topCategoryItems__minBtn{
+      display: flex;
+   }
+   .topCategoryItems{
+      display: none !important;
+   }
+   .contact__items, .contact__map{
+      margin-top: 25px;
+   }
+   .contact__requisites{
+      margin-top: 40px;
+      margin-bottom: 50px;
+   }
+   .requisites__items{
+      margin-bottom: 50px;
+   }
+   .requisites__item{
+      display: block;
+      margin-bottom: 15px;
+   }
+   .requisites__left span{
+      display: none;
+   }
+   .requisites__left p{
+      margin-top: 0;
+   }
+   .requisites__item p{
+      margin-top: 5px;
+      max-width: unset;
+   }
+   .contact__item{
+      width: 100%;
+      padding-right: 15px;
+      margin-bottom: 15px;
+   }
+   .contact__itemText{
+      margin-top: 10px;
+   }
+   .contact__itemTitle h3{
+      font-size: 18px;
+   }
+   .contact__itemText p, .contact__itemText a, .contact__itemContacts a{
+      font-size: 14px;
+   }
+   .contact__map img{
+      display: none;
+   }
+   #mapMin{
+      display: block;
+   }
+   .contact__requisites h3{
+      font-size: 18px;
+   }
+   .requisites__items{
+      margin-top: 15px;
+   }
+   .requisites__item p{
+      font-size: 14px;
    }
 }

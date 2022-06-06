@@ -35,4 +35,8 @@
    .payment__item{
       margin-bottom: 25px;
    }
+   .payment__item img{
+      width: 38px;
+      height: 38px;
+   }
 }
