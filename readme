@@ -12,7 +12,7 @@
 Для активный кнопки в форме на странице basket нужно добавить класс formItem__activeBtn
 Для активной кнопки категории на страницах нужно добавить класс topCategoryItemActive
 Оверлею добавлять класс activeOverlay
-Для активного поиска нужно блоку activeSearchMenu добавить класс activeSearchMenuActive и блоку headerBottom__search добавить класс activeSearch
+Для активного поиска, нужно блоку activeSearchMenu добавить класс activeSearchMenuActive и блоку headerBottom__search добавить класс activeSearch
 Для открытия главного мобильного меню нужно блоку mainMenu добавить класс mainMenuActive
 Для открытия мобильных меню, нужно добавить блокам mobMenu1 или mobMenu2 классы mobMenu1Active или mobMenu2Active
-На странице comparison, для прилипания товаров нужно добавить блоку comparison__items класс comparison__itemsFixed
+На странице comparison, для прилипания товаров, нужно добавить блоку comparison__items класс comparison__itemsFixed
