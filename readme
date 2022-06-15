@@ -16,3 +16,4 @@
 Для открытия главного мобильного меню нужно блоку mainMenu добавить класс mainMenuActive
 Для открытия мобильных меню, нужно добавить блокам mobMenu1 или mobMenu2 классы mobMenu1Active или mobMenu2Active
 На странице comparison, для прилипания товаров, нужно добавить блоку comparison__items класс comparison__itemsFixed
+Для открытия меню фильтрации, нужно блоку mobFilterMenu добавить класс mobFilterMenuActive
