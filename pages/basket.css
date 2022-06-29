@@ -192,9 +192,29 @@
    transition: transform 0.1s linear;
 }
 .basket1__totalPrice{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
    margin-top: 25px;
-   text-align: end;
    margin-right: 60px;
+}
+.basket__minSumNotification{
+   display: flex;
+   align-items: center;
+   border: 1.5px solid #ED6663;
+   padding: 5px 10px;
+   border-radius: 6px;
+   margin-right: 20px;
+   text-align: center;
+}
+.wrapper .basket__minSumNotification p{
+   font-size: 16px;
+   font-weight: 600;
+   color: #ED6663;
+   margin-right: 15px;
+}
+.basket__minSumNotification svg{
+   min-width: 20px;
 }
 .basket1__totalPrice p{
    font-size: 20px;
@@ -531,6 +551,7 @@
    .formItem__inputs input{
       margin-bottom: 15px;
       width: 100%;
+      margin-right: 0;
    }
    .formItem__inputs textarea{
       margin-bottom: 40px;
@@ -547,5 +568,13 @@
    }
    .formItem__checkbox:first-child{
       margin-bottom: 15px;
+   }
+   .basket1__totalPrice{
+      flex-direction: column-reverse;
+      align-items: flex-end;
+   }
+   .basket__minSumNotification{
+      margin-right: 0;
+      margin-top: 10px;
    }
 }

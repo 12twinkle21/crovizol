@@ -127,6 +127,9 @@
 #mapMin{
    display: none;
 }
+.contact__itemText .contact__workTime{
+   color: #000;
+}
 
 
 
