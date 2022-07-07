@@ -40,8 +40,16 @@ body{
    z-index: 100000;
 }
 .hAndFWrapper{
+   margin: 0 auto;
+}
+.headerTop__content{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 40px;
    max-width: 1600px;
    margin: 0 auto;
+   padding: 0 92px;
 }
 .headerNotification{
    height: 60px;
@@ -54,19 +62,16 @@ body{
 }
 .headerMinSumNotification{
    padding: 0 92px;
-   margin-top: 15px;
    display: flex;
    justify-content: flex-end;
    text-align: center;
    color: #ED6663;
+   max-width: 1600px;
+   margin: 0 auto;
+   margin-top: 15px;
 }
 .headerTop{
-   display: flex;
-   justify-content: space-between;
-   padding: 0 92px;
    background-color: #F5F5F5;
-   height: 40px;
-   align-items: center;
 }
 .header p, .header a, .header button{
    font-size: 14px;
@@ -134,10 +139,12 @@ body{
 }
 .headerBottom{
    align-items: center;
-   margin-top: 25px;
    padding: 0 92px;
    display: flex;
    justify-content: space-between;
+   max-width: 1600px;
+   margin: 0 auto;
+   margin-top: 25px;
 }
 .headerBottomSmallBtn{
    margin-right: 15px;
@@ -567,9 +574,13 @@ body{
    margin-right: 0;
 }
 .footer{
-   padding: 80px 92px;
    background-color: #F5F5F5;
+}
+.footer__content{
+   max-width: 1600px;
+   margin: 0 auto;
    position: relative;
+   padding: 80px 92px;
 }
 .footerTop{
    display: flex;
@@ -1526,10 +1537,10 @@ body{
    .headerTop__btn1{
       margin-right: 20px;
    }
-   .headerTop, .headerBottom, .wrapper, .headerMinSumNotification{
+   .headerTop__content, .headerBottom, .wrapper, .headerMinSumNotification{
       padding: 0 50px;
    }
-   .footer{
+   .footer__content{
       padding: 80px 50px;
    }
    .headerBottom__logo, .headerBottom__search, .headerBottom__call {
@@ -1553,10 +1564,10 @@ body{
    .headerBottom__call a:first-child{
       font-size: 16px;
    }
-   .headerTop, .headerBottom, .wrapper, .headerMinSumNotification{
+   .headerTop__content, .headerBottom, .wrapper, .headerMinSumNotification{
       padding: 0 30px;
    }
-   .footer{
+   .footer__content{
       padding: 80px 30px;
    }
    .headerBottom__logo, .headerBottom__search, .headerBottom__call{
@@ -1592,7 +1603,7 @@ body{
    .footer__info{
       display: none;
    }
-   .footer{
+   .footer__content{
       padding: 30px;
       align-items: unset;
    }
@@ -1666,10 +1677,10 @@ body{
    .sliderBgMin{
       display: block;
    }
-   .headerTop, .headerBottom, .wrapper, #headerBottom__searchMin, .headerMinSumNotification, .headerNotification{
+   .headerTop__content, .headerBottom, .wrapper, #headerBottom__searchMin, .headerMinSumNotification, .headerNotification{
       padding: 0 15px;
    }
-   .footer{
+   .footer__content{
       padding: 30px 15px;
    }
    .footer__call a:first-child{

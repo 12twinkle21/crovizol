@@ -163,8 +163,9 @@
    line-height: 20px;
    color: #3E64FF;
 }
-
-
+.favorites__topBtnsMin{
+   display: none;
+}
 
 .btns__amount button:active, .btns__inCart button:active, .favorites__itemImgBtn:active, .favorites__topFilter:active, .favorites__topBtn:active{
    transform: scale(0.9);
@@ -260,7 +261,11 @@
       margin-right: 0;
       margin-bottom: 15px;
    }
+   .favorites__topBtnsMin{
+      display: block;
+   }
 }
+
 @media(max-width: 650px){
    .favorites__item, .clearFlex{
       width: 49%;
